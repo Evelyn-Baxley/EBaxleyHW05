@@ -93,6 +93,18 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <segmentedControl hidden="YES" opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="3ys-3A-xbl">
+                                <rect key="frame" x="16" y="20" width="27" height="29"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <segments>
+                                    <segment title="+"/>
+                                    <segment title="-"/>
+                                </segments>
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="posNegPressed:" destination="BYZ-38-t0r" eventType="valueChanged" id="mht-oN-Imr"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <color key="backgroundColor" red="0.90196079019999997" green="0.90196079019999997" blue="0.90196079019999997" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
@@ -100,6 +112,7 @@
                         <outlet property="decimalSegment" destination="fJO-Ic-SC1" id="wac-C1-t2n"/>
                         <outlet property="formulaPicker" destination="Qe4-9w-wHa" id="ena-ew-CQ9"/>
                         <outlet property="fromUnitsLabel" destination="Mbl-cg-iyG" id="Sju-Wl-tYn"/>
+                        <outlet property="posNeg" destination="3ys-3A-xbl" id="DGG-H2-Vih"/>
                         <outlet property="resultsLabel" destination="MKM-78-TcY" id="bI4-AK-YUc"/>
                         <outlet property="userInput" destination="EU5-2G-fJc" id="YPG-1V-CRv"/>
                     </connections>
